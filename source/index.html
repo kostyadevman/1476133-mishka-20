@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Магазин игрушек ручной работы: "Мишка"</title>
   </head>
-  <body class="page__body">
+  <body>
     <header class="page-header">
       <a class="page-header__logo" href="#">
         <img src="https://via.placeholder.com/86x35" alt="Магазин игрушек «Мишка»" width="86" height="35">
@@ -47,7 +47,7 @@
       <section class="product-categories">
         <ul class="product-categories__list products">
           <li class="products__item">
-            <a href="#" class="prooducts__link">
+            <a href="#" class="products__link">
               Предметы интерьера
             </a>
           </li>
@@ -66,35 +66,23 @@
         <p class="product-week__description">
           Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
         </p>
-        <ul class="product-week__profile">
-          <li class="profile__item">
-            <p class="profile__header">
-              Цвет:
-            </p>
-            <p class="profile__value">
-              «Тиффани»/серый
-            </p>
-          </li>
-          <li class="profile__item">
-            <p class="profile__header">
-              Диаметр:
-            </p>
-            <p class="profile__value">
-              25 см
-            </p>
-          </li>
-          <li class="profile__item">
-            <p class="profile__header">
-              Высота:
-            </p>
-            <p class="profile__value">
-              15 см
-            </p>
-          </li>
-        </ul>
+        <table class="product-week__profile profile">
+          <tr class="profile__row">
+            <th class="profile__header">Цвет:</th>
+            <td class="profile__value">«Тиффани»/серый</td>
+          </tr>
+          <tr class="profile__row">
+            <th class="profile__header">Диаметр:</th>
+            <td class="profile__value">25 см</td>
+          </tr>
+          <tr class="profile__row">
+            <th class="profile__header">Высота:</th>
+            <td class="profile__value">15 см</td>
+          </tr>
+        </table>
         <img src="https://via.placeholder.com/260x315" alt="Три корзинки разных размеров и цветов" class="product-week__img" width="260" height="315">
-        <p class="product-week__price">Цена: 990 руб.</p>
-        <button class="product-week__button" type="button">Заказать</button>
+        <span class="product-week__price">Цена: 990 руб.</span>
+        <a class="product-week__cart-link" href="#" >Заказать</a>
       </section>
       <section class="about-us">
         <h2 class="about-us__header">Коротко о нас</h2>
