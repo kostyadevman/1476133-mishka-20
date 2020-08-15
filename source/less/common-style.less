@@ -5,7 +5,7 @@
 }
 
 body {
-  min-width: 1200px;
+  min-height: 100%;
   font-family: "OpenSans", "Arial", sans-serif;
   font-weight: normal;
   font-size: 15px;
@@ -35,4 +35,20 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.container {
+  @include padding;
+  width: 100%;
+  min-width: 260px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    @include padding(50px, 50px);
+  }
+
+  @media (min-width: @desktop-width) {
+
+    max-width: 1150px;
+  }
 }

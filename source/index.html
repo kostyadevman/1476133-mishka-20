@@ -2,45 +2,59 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="device-width, initial-scale=1.0">
     <title>Магазин игрушек ручной работы: "Мишка"</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header container">
       <a class="page-header__logo logo" href="#">
         <img src="https://via.placeholder.com/86x35" alt="Магазин игрушек «Мишка»" width="86" height="35">
       </a>
       <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">
-              Открыть меню
-            </span>
-          </button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="catalog.html" class="site-list__link">
-                Каталог товаров
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html" class="site-list__link">
-                Вязание на заказ
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="#" class="site-list__link">
-                Поиск по сайту
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="#" class="site-list__link">
-                Корзина: пока пуста
-              </a>
-            </li>
-          </ul>
-        </div>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">
+            Открыть меню
+          </span>
+        </button>
+        <ul class="main-nav__list site-list site-list__links">
+          <li class="site-list__item">
+            <a href="catalog.html" class="site-list__link">
+              Каталог товаров
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html" class="site-list__link">
+              Вязание на заказ
+            </a>
+          </li>
+          <li class="site-list__item site-list__item-invisible">
+            <a href="blank.html" class="site-list__link">
+              Новые поступления
+            </a>
+          </li>
+          <li class="site-list__item site-list__item-invisible">
+            <a href="blank.html" class="site-list__link">
+              Распродажа
+            </a>
+          </li>
+        </ul>
+        <ul class="main-nav__list site-list site-list__user-links">
+          <li class="site-list__item">
+            <a href="#" class="site-list__link">
+              <span class="site-list__search-text">Поиск по сайту</span>
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#" class="site-list__link">
+              Корзина: пока пуста
+            </a>
+          </li>
+        </ul>
       </nav>
+      <p class="page-header__delivery-notification">
+        Бесплатная доставка по России
+      </p>
     </header>
 
     <main class="page-main">

@@ -1,7 +1,26 @@
 .site-list {
+  display: flex;
+  flex-direction: column;
   list-style: none;
   margin: 0;
   padding: 0;
+  flex-basis: 50%;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+
+  &__links {
+    @media (min-width: @tablet-width) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__user-links {
+    @media (min-width: @tablet-width) {
+      flex-wrap: nowrap;
+    }
+  }
 }
 
 .site-list__item {
@@ -12,7 +31,20 @@
   line-height: 24px;
 }
 
+.site-list__item-invisible {
+  @media (max-width: @desktop-width - 1px) {
+    display: none;
+  }
+}
+
+.site-list__search-text {
+  @media (min-width: @mobile-width) {
+    display: none;
+  }
+}
+
 .site-list__link {
-  padding: 30px;
+  padding: 0px;
   text-align: center;
 }
+

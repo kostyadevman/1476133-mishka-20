@@ -1,11 +1,18 @@
-//.main-nav {
-//
-//}
+.main-nav {
+  display: flex;
+
+  @media (max-width: @mobile-width) {
+    flex-direction: column;
+  }
+}
+
 //
 //.main-nav__wrapper {
 //
 //}
 //
-//.main-nav__toggle {
-//
-//}
+.main-nav__toggle {
+  @media (min-width: @mobile-width) {
+    display: none;
+  }
+}
