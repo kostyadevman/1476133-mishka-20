@@ -1,11 +1,16 @@
 .products-catalog {
-  margin-top: 30px;
+  margin: 0 auto;
 }
 
 .products-catalog__list {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .products-catalog__item {

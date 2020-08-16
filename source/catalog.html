@@ -7,49 +7,59 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header container">
       <a class="page-header__logo logo" href="index.html">
         <img src="https://via.placeholder.com/86x35" alt="Магазин игрушек «Мишка»" width="86" height="35">
       </a>
       <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">
-              Открыть меню
-            </span>
-          </button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="catalog.html" class="site-list__link">
-                Каталог товаров
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html" class="site-list__link">
-                Вязание на заказ
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="#" class="site-list__link">
-                Поиск по сайту
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="#" class="site-list__link">
-                Корзина: пока пуста
-              </a>
-            </li>
-          </ul>
-        </div>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">
+            Открыть меню
+          </span>
+        </button>
+        <ul class="main-nav__list site-list site-list__links">
+          <li class="site-list__item">
+            <a href="catalog.html" class="site-list__link">
+              Каталог товаров
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html" class="site-list__link">
+              Вязание на заказ
+            </a>
+          </li>
+          <li class="site-list__item site-list__item-invisible">
+            <a href="blank.html" class="site-list__link">
+              Новые поступления
+            </a>
+          </li>
+          <li class="site-list__item site-list__item-invisible">
+            <a href="blank.html" class="site-list__link">
+              Распродажа
+            </a>
+          </li>
+        </ul>
+        <ul class="main-nav__list site-list site-list__user-links">
+          <li class="site-list__item">
+            <a href="#" class="site-list__link">
+              <span class="site-list__search-text">Поиск по сайту</span>
+            </a>
+          </li>
+          <li class="site-list__item site-list__item--cart">
+            <a href="#" class="site-list__link">
+              Корзина: пока пуста
+            </a>
+          </li>
+        </ul>
       </nav>
+      <p class="page-header__delivery-notification">
+        Бесплатная доставка по России
+      </p>
     </header>
 
     <main class="page-main">
-      <h1 class="visually-hidden">Каталог товаров</h1>
-      <section class="services">
-        <span class="services__title">Каталог товаров</span>
-      </section>
-      <section class="products-catalog">
+      <h1 class="page-main__title">Каталог товаров</h1>
+      <section class="products-catalog container">
         <h2 class="visually-hidden">Список товаров</h2>
         <ul class="products-catalog__list">
           <li class="products-catalog__item card">
@@ -96,25 +106,32 @@
     </main>
 
     <footer class="page-footer">
-      <section class="socials">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="socials__list">
-          <li class="socials__item">
-            <a class="socials__link" target="_blank" href="https://www.instagram.com/" aria-label="instagram"></a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link" target="_blank" href="https://www.facebook.com/" aria-label="facebook"></a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link" target="_blank" href="https://twitter.com/" aria-label="twitter"></a>
-          </li>
-        </ul>
-      </section>
-      <section class="copyright">
-        <h2 class="visually-hidden">Копирайт</h2>
-        <span class="copyright__text">Разработано</span>
-        <a class="copyright__link" target="_blank" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy"></a>
-      </section>
+      <div class="container">
+        <div class="page-footer__wrapper">
+          <a class="page-footer__logo logo logo" href="index.html">
+            <img src="https://via.placeholder.com/86x35" alt="Магазин игрушек «Мишка»" width="86" height="35">
+          </a>
+          <section class="socials">
+            <h2 class="visually-hidden">Социальные сети</h2>
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a class="socials__link" target="_blank" href="https://www.instagram.com/" aria-label="instagram"></a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" target="_blank" href="https://www.facebook.com/" aria-label="facebook"></a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" target="_blank" href="https://twitter.com/" aria-label="twitter"></a>
+              </li>
+            </ul>
+          </section>
+          <section class="copyright">
+            <h2 class="visually-hidden">Копирайт</h2>
+            <span class="copyright__text">Разработано</span>
+            <a class="copyright__link" target="_blank" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy"></a>
+          </section>
+        </div>
+      </div>
     </footer>
 
   </body>
