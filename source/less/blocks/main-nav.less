@@ -1,11 +1,27 @@
-//.main-nav {
-//
-//}
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+
+  @media (max-width: @mobile-width) {
+    flex-direction: column;
+  }
+
+  outline: 5px solid fade(red, 50%);
+  outline-offset: -5px;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+}
 //
 //.main-nav__wrapper {
 //
 //}
 //
-//.main-nav__toggle {
-//
-//}
+.main-nav__toggle {
+  @media (min-width: @mobile-width) {
+    display: none;
+  }
+}

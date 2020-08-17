@@ -1,3 +1,35 @@
-//.page-header {
-//
-//}
+.page-header {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  outline: 5px solid fade(green, 50%);
+  outline-offset: -5px;
+}
+
+.page-header__delivery-notification {
+  margin-left: auto;
+  padding-right: 30px 0;
+  margin-top: -50px;
+
+  @media (max-width: @mobile-width) {
+    display: none;
+  }
+}
+
+.page-header__logo {
+  display: block;
+  margin: auto;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 45px;
+    left: 110px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

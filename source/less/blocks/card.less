@@ -1,6 +1,11 @@
-//.card {
-//
-//}
+.card {
+  outline: 5px solid rgba(128, 0, 0, 0.5);
+  outline-offset: -5px;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    display: flex;
+  }
+}
 
 .card__wrapper {
   margin: 0;

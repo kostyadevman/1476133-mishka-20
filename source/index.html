@@ -2,51 +2,65 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="device-width, initial-scale=1.0">
     <title>Магазин игрушек ручной работы: "Мишка"</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header container">
       <a class="page-header__logo logo" href="#">
         <img src="https://via.placeholder.com/86x35" alt="Магазин игрушек «Мишка»" width="86" height="35">
       </a>
       <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">
-              Открыть меню
-            </span>
-          </button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="catalog.html" class="site-list__link">
-                Каталог товаров
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html" class="site-list__link">
-                Вязание на заказ
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="#" class="site-list__link">
-                Поиск по сайту
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="#" class="site-list__link">
-                Корзина: пока пуста
-              </a>
-            </li>
-          </ul>
-        </div>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">
+            Открыть меню
+          </span>
+        </button>
+        <ul class="main-nav__list site-list site-list__links">
+          <li class="site-list__item">
+            <a href="catalog.html" class="site-list__link">
+              Каталог товаров
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html" class="site-list__link">
+              Вязание на заказ
+            </a>
+          </li>
+          <li class="site-list__item site-list__item-invisible">
+            <a href="blank.html" class="site-list__link">
+              Новые поступления
+            </a>
+          </li>
+          <li class="site-list__item site-list__item-invisible">
+            <a href="blank.html" class="site-list__link">
+              Распродажа
+            </a>
+          </li>
+        </ul>
+        <ul class="main-nav__list site-list site-list__user-links">
+          <li class="site-list__item">
+            <a href="#" class="site-list__link">
+              <span class="site-list__search-text">Поиск по сайту</span>
+            </a>
+          </li>
+          <li class="site-list__item site-list__item--cart">
+            <a href="#" class="site-list__link">
+              Корзина: пока пуста
+            </a>
+          </li>
+        </ul>
       </nav>
+      <p class="page-header__delivery-notification">
+        Бесплатная доставка по России
+      </p>
     </header>
 
     <main class="page-main">
-      <section class="product-categories">
+      <section class="product-categories container">
         <h2 class="visually-hidden">Категории товаров</h2>
-        <span class="product-categories__title">Милые штуки ручной работы для дома</span>
+        <span class="product-categories__title">Милые штуки ручной<br> работы для дома</span>
         <ul class="product-categories__list products">
           <li class="products__item products__item_left ">
             <a href="#" class="products__link">
@@ -60,13 +74,13 @@
           </li>
         </ul>
       </section>
-      <section class="product-week">
+      <section class="product-week container">
         <h2 class="product-week__title">
           Вязаные корзинки
-          <span class="product-week__subtitle">Товар недели</span>
         </h2>
+        <span class="product-week__subtitle">Товар недели</span>
         <p class="product-week__description">
-          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
         </p>
         <table class="product-week__profile profile">
           <tr class="profile__row">
@@ -86,7 +100,7 @@
         <span class="product-week__price">Цена: 990 руб.</span>
         <a class="product-week__cart-link" href="#" >Заказать</a>
       </section>
-      <section class="about-us">
+      <section class="about-us container">
         <h2 class="about-us__header">Коротко о нас:</h2>
         <ul class="about-us__list">
           <li class="about-us__item">Экологически чистые материалы</li>
@@ -100,25 +114,32 @@
     </main>
 
     <footer class="page-footer">
-      <section class="socials">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="socials__list">
-          <li class="socials__item">
-            <a class="socials__link" target="_blank" href="https://www.instagram.com/" aria-label="instagram"></a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link" target="_blank" href="https://www.facebook.com/" aria-label="facebook"></a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link" target="_blank" href="https://twitter.com/" aria-label="twitter"></a>
-          </li>
-        </ul>
-      </section>
-      <section class="copyright">
-        <h2 class="visually-hidden">Копирайт</h2>
-        <span class="copyright__text">Разработано</span>
-        <a class="copyright__link" target="_blank" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy"></a>
-      </section>
+      <div class="container">
+        <div class="page-footer__wrapper">
+          <a class="page-footer__logo logo logo" href="#">
+            <img src="https://via.placeholder.com/86x35" alt="Магазин игрушек «Мишка»" width="86" height="35">
+          </a>
+          <section class="socials">
+            <h2 class="visually-hidden">Социальные сети</h2>
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a class="socials__link" target="_blank" href="https://www.instagram.com/" aria-label="instagram"></a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" target="_blank" href="https://www.facebook.com/" aria-label="facebook"></a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" target="_blank" href="https://twitter.com/" aria-label="twitter"></a>
+              </li>
+            </ul>
+          </section>
+          <section class="copyright">
+            <h2 class="visually-hidden">Копирайт</h2>
+            <span class="copyright__text">Разработано</span>
+            <a class="copyright__link" target="_blank" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy"></a>
+          </section>
+        </div>
+      </div>
     </footer>
 
   </body>

@@ -1,14 +1,60 @@
-//.product-week {
-//
-//}
+.product-week {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: auto 50%;
+    grid-template-areas:
+      "title subtitle"
+      "description img"
+      "profile img"
+      "price img"
+      "cart img";
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 175px auto 50%;
+    grid-template-areas:
+      "subtitle title img"
+      ". description img"
+      ". profile img"
+      ". price img"
+      ". cart img";
+  }
+}
+
+.product-week__profile {
+  grid-area: profile;
+}
+
+.product-week__img {
+  z-index: -1;
+  width: 100%;
+  grid-area: img;
+}
 
 .product-week__title {
+  grid-area: title;
+  grid-row: 1;
+  grid-column-start: 1;
+  grid-column-end: -1;
   font-weight: bold;
-  font-size: 19px;
-  line-height: 24px;
+  font-size: 25px;
+  line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 2;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .product-week__subtitle {
+  grid-area: subtitle;
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
@@ -17,6 +63,7 @@
 }
 
 .product-week__description {
+  grid-area: description;
   font-size: 15px;
   line-height: 24px;
 }
@@ -59,6 +106,8 @@
 }
 
 .product-week__price {
+  grid-area: price;
+  display: block;
   font-family: "OpenSans", "Arial", sans-serif;
   font-weight: normal;
   font-size: 17px;
@@ -67,6 +116,8 @@
 }
 
 .product-week__cart-link {
+  grid-area: cart;
+  display: block;
   padding: 16px 70px;
   font-family: "OpenSans", "Arial", sans-serif;
   font-weight: normal;
