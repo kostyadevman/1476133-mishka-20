@@ -1,0 +1,49 @@
+.order {
+  margin-bottom: 50px;
+}
+.order__fieldset {
+  margin: 0;
+  padding: 0 0 20px 0;
+  border: none;
+}
+
+.order__wrapper {
+  @media (min-width: @mobile-width) {
+    display: flex;
+  }
+}
+
+.order__legend {
+  text-transform: uppercase;
+  color: @basic-green;
+  padding: 0 0 25px 0;
+
+  @media (min-width: @mobile-width) {
+    padding: 0 30px 25px 20px;
+  }
+}
+
+.order__options {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  &--color {
+    @media (min-width: @mobile-width) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.order__message {
+  resize: none;
+}
+
+.order__item {
+  @media (min-width: @mobile-width) {
+    flex-basis: 250px;
+  }
+}
