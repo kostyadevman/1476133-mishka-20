@@ -12,6 +12,7 @@
 
   @media (min-width: @desktop-width) {
     display: grid;
+    grid-gap: 40px;
     grid-template-columns: 175px auto 50%;
     grid-template-areas:
       "subtitle title img"
@@ -118,9 +119,9 @@
 .product-week__cart-link {
   grid-area: cart;
   display: block;
-  padding: 16px 70px;
-  font-family: "OpenSans", "Arial", sans-serif;
-  font-weight: normal;
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
   font-size: 17px;
   line-height: 24px;
   color: @special-grey;
