@@ -1,0 +1,122 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid @special-grey-c6;
+  box-shadow: 0 5px 10px fade(@special-grew-dark, 25%);
+  background-color: @basic-white;
+
+  @media (max-width: @mobile-width) {
+    width: 100vw;
+    padding: 0 30px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0 110px;
+  }
+
+  &--show {
+    @keyframes modal-on {
+      0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 1;
+      }
+
+      100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    display: block;
+    animation: modal-on 0.6s;
+  }
+}
+
+.modal__title {
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  @media (max-width: @mobile-width) {
+    max-width: 200px;
+    padding: 30px 0 15px 0;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-top: 40px;
+    white-space: nowrap;
+    font-size: 30px;
+    line-height: 57px;
+  }
+}
+
+.modal__title-wrapper {
+  white-space: nowrap;
+}
+
+.modal__fieldset {
+  padding: 0;
+  border: none;
+  text-align: center;
+}
+
+.modal__legend {
+  line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+  }
+}
+
+.modal__options {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 30px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.modal__item {
+  flex-grow: 1;
+  border: 2px solid fade(@special-grey, 10%);
+  box-sizing: border-box;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &--active {
+    border: 2px solid @basic-green;
+  }
+}
+
+.modal__label {
+  display: block;
+  padding: 20px 0;
+}
+
+.modal__submit {
+  display: block;
+  width: 100%;
+  margin: 0 auto 45px auto;
+  padding: 20px 0;
+  border: none;
+  text-align: center;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: @basic-white;
+  background-color: @basic-green;
+}
+
+

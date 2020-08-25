@@ -1,5 +1,7 @@
 .page-main__title {
   display: block;
+  position: relative;
+  z-index: -1;
   margin: 0 0 110px 0;
   padding: 140px 0;
   text-align: center;
@@ -9,10 +11,34 @@
   background-color: @basic-grey;
 
   @media (min-width: @tablet-width) {
-    margin: -80px 0 110px 0;
+    margin: -75px 0 110px 0;
+  }
+
+  &::before {
+    @media (min-width: @tablet-width) {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 20px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: 100%;
+    }
   }
 }
 
 .page-main__notification {
   margin-bottom: 60px;
+  font-size: 17px;
+  line-height: 30px;
+
+  @media (max-width: @mobile-width) {
+    font-size: 13px;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 205px;
+  }
 }

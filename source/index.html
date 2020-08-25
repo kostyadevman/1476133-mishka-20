@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header container">
+    <header class="page-header container container--max">
       <a class="page-header__logo logo" href="#">
         <img src="https://via.placeholder.com/86x35" alt="Магазин игрушек «Мишка»" width="86" height="35">
       </a>
@@ -18,22 +18,22 @@
           </span>
         </button>
         <ul class="main-nav__list site-list site-list__links">
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--small">
             <a href="catalog.html" class="site-list__link">
               Каталог товаров
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--small">
             <a href="form.html" class="site-list__link">
               Вязание на заказ
             </a>
           </li>
-          <li class="site-list__item site-list__item-invisible">
+          <li class="site-list__item site-list__item--invisible">
             <a href="blank.html" class="site-list__link">
               Новые поступления
             </a>
           </li>
-          <li class="site-list__item site-list__item-invisible">
+          <li class="site-list__item site-list__item--invisible">
             <a href="blank.html" class="site-list__link">
               Распродажа
             </a>
@@ -58,47 +58,53 @@
     </header>
 
     <main class="page-main">
-      <section class="product-categories container">
-        <h2 class="visually-hidden">Категории товаров</h2>
-        <span class="product-categories__title">Милые штуки ручной<br> работы для дома</span>
-        <ul class="product-categories__list products">
+      <section class="product-categories">
+        <div class="container container--max">
+          <h2 class="visually-hidden">Категории товаров</h2>
+          <span class="product-categories__title">Милые штуки ручной<br> работы для дома</span>
+          <ul class="product-categories__list products">
           <li class="products__item products__item_left ">
             <a href="#" class="products__link">
               Предметы интерьера
             </a>
+            <div>SVG_PIC</div>
           </li>
           <li class="products__item products__item_right">
             <a href="#" class="products__link">
               Детские игрушки
             </a>
+            <div>SVG_PIC</div>
           </li>
         </ul>
+        </div>
       </section>
       <section class="product-week container">
-        <h2 class="product-week__title">
-          Вязаные корзинки
-        </h2>
-        <span class="product-week__subtitle">Товар недели</span>
-        <p class="product-week__description">
-            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
-        </p>
-        <table class="product-week__profile profile">
-          <tr class="profile__row">
-            <th class="profile__header">Цвет:</th>
-            <td class="profile__value">«Тиффани»/серый</td>
-          </tr>
-          <tr class="profile__row">
-            <th class="profile__header">Диаметр:</th>
-            <td class="profile__value">25 см</td>
-          </tr>
-          <tr class="profile__row">
-            <th class="profile__header">Высота:</th>
-            <td class="profile__value">15 см</td>
-          </tr>
-        </table>
-        <img src="https://via.placeholder.com/260x315" alt="Три корзинки разных размеров и цветов" class="product-week__img" width="260" height="315">
-        <span class="product-week__price">Цена: 990 руб.</span>
-        <a class="product-week__cart-link" href="form.html">Заказать</a>
+        <div class="product-week__wrapper">
+          <h2 class="product-week__title">
+            Вязаные корзинки
+          </h2>
+          <span class="product-week__subtitle">Товар недели</span>
+          <p class="product-week__description">
+              Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+          </p>
+          <table class="product-week__profile profile">
+            <tr class="profile__row">
+              <th class="profile__header">Цвет:</th>
+              <td class="profile__value">«Тиффани»/серый</td>
+            </tr>
+            <tr class="profile__row">
+              <th class="profile__header">Диаметр:</th>
+              <td class="profile__value">25 см</td>
+            </tr>
+            <tr class="profile__row">
+              <th class="profile__header">Высота:</th>
+              <td class="profile__value">15 см</td>
+            </tr>
+          </table>
+          <img src="https://via.placeholder.com/260x315" alt="Три корзинки разных размеров и цветов" class="product-week__img" width="260" height="315">
+          <span class="product-week__price">Цена: 990 руб.</span>
+          <a class="product-week__cart-link" href="form.html">Заказать</a>
+        </div>
       </section>
       <section class="about-us container">
         <h2 class="about-us__header">Коротко о нас:</h2>
@@ -112,17 +118,40 @@
         </ul>
       </section>
       <section class="feedback container">
-        <h2 class="feedback__title">Отзывы</h2>
-        <blockquote class="feedback__item">
-          <p class="feedback__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-          <cite class="feedback__author">Анастасия Красильникова</cite>
-          <cite class="feedback__instagram">@misssssiskras</cite>
-        </blockquote>
-        <div class="feedback__navigation-wrapper">
-          <button class="feedback__button feedback__button--previous" type="button">туда</button>
-          <button class="feedback__button feedback__button--next" type="button">сюда</button>
+        <div class="feedback__wrapper">
+          <h2 class="feedback__title">Отзывы</h2>
+          <blockquote class="feedback__item">
+            <p class="feedback__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+            <cite class="feedback__author">Анастасия Красильникова</cite>
+            <cite class="feedback__instagram">@misssssiskras</cite>
+          </blockquote>
+          <div class="feedback__navigation-wrapper">
+            <button class="feedback__button feedback__button--previous" type="button">туда</button>
+            <button class="feedback__button feedback__button--next" type="button">сюда</button>
+          </div>
+          <a class="feedback__write" href="blank.html">Написать</a>
         </div>
-        <a class="feedback__write" href="blank.html">Написать</a>
+      </section>
+      <section class="contacts">
+        <div class="container container--max">
+          <div class="contacts__wrapper">
+            <h2 class="contacts__title">Контакты</h2>
+            <table class="contacts__address address">
+              <tbody class="address__body">
+                <tr class="address__row">
+                  <th class="address__header">email:</th>
+                  <td class="address__value"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
+                </tr>
+                <tr class="address__row">
+                  <th class="address__header">адрес:</th>
+                  <td class="address__value"><address>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</address></td>
+                </tr>
+              </tbody>
+            </table>
+            <img class="contacts__img" src="img/map-mobile@1x.jpg" alt="офис 101 по адресу: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8" width="322" height="547">
+            <a class="contacts__write" href="blank.html">Напишите нам</a>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -155,5 +184,29 @@
       </div>
     </footer>
 
+    <section class="page-modal modal">
+      <h2 class="modal__title">Добавить <span class="modal__title-wrapper">в корзину</span></h2>
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="modal__fieldset">
+          <legend class="modal__legend">Выберете размер:</legend>
+          <ul class="modal__options">
+            <li class="modal__item modal__item--active">
+              <input class="modal__radio visually-hidden" type="radio" name="size" id="small" checked value="s">
+              <label class="modal__label" for="small">S</label>
+            </li>
+            <li class="modal__item">
+              <input class="modal__radio visually-hidden" type="radio" name="size" id="mid" value="m">
+              <label class="modal__label" for="mid">M</label>
+            </li>
+            <li class="modal__item">
+              <input class="modal__radio visually-hidden" type="radio" name="size" id="large" value="l">
+              <label class="modal__label" for="large">L</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="modal__submit" type="submit">Добавить</button>
+      </form>
+    </section>
+    <script src="js/modal.js"></script>
   </body>
 </html>
