@@ -2,14 +2,28 @@
 //
 //}
 
+.copyright__link {
+  display: flex;
+  align-items: center;
+}
+
+.copyright__link:hover .copyright__icon,
+.copyright__link:focus .copyright__icon {
+  fill: @special-green-46;
+}
+
+.copyright__link:active .copyright__icon {
+  fill-opacity: 0.3;
+}
+
 .copyright__text {
   display: block;
-  padding: 30px 0 30px 0;
+  margin-right: 25px;
   font-weight: bold;
   font-size: 19px;
   line-height: 18px;
 }
 
-//.copyright__link {
-//
-//}
+.copyright__icon {
+  fill: @special-green-63;
+}

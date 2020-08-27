@@ -12,23 +12,32 @@
 }
 
 .products__item {
-  display: flex;
-  justify-content: space-between;
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
-  padding: 25px 35px 40px 35px;
   flex-basis: 50%;
 
-  &_left {
+  &--left {
     background-color: @basic-green;
   }
 
-  &_right {
+  &--right {
     background-color: @special-green;
   }
 }
 
 .products__link {
-  max-width: 160px;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 35px 40px 35px;
+}
+
+
+.products__text {
+  flex-basis: 20%;
+}
+
+.products__icon {
+  fill: @special-green-dark;
+  fill-opacity: 0.5;
 }

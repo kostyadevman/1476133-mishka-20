@@ -8,11 +8,12 @@
   padding: 0;
 
   @media (min-width: @desktop-width) {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
   }
 }
 
 .products-catalog__item {
-  margin-bottom: 30px;
+  //margin-bottom: 30px;
 }

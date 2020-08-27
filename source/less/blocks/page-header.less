@@ -2,8 +2,9 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  outline: 5px solid fade(green, 50%);
-  outline-offset: -5px;
+  z-index: 2;
+  //outline: 5px solid fade(green, 50%);
+  //outline-offset: -5px;
 
   &::before {
     @media (max-width: @mobile-width) {
@@ -21,7 +22,7 @@
 .page-header__delivery-notification {
   margin-left: auto;
   padding-right: 0;
-  margin-top: -50px;
+  margin-top: -55px;
 
   @media (max-width: @mobile-width) {
     display: none;
@@ -38,8 +39,8 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: 45px;
-    left: 110px;
+    top: 30px;
+    left: 70px;
   }
 
   @media (min-width: @desktop-width) {

@@ -11,8 +11,12 @@
 
   &__links {
     @media (min-width: @tablet-width) {
-      flex-basis: 50%;
+      flex-basis: 47%;
       flex-wrap: wrap;
+    }
+
+    @media (min-width: @desktop-width) {
+      flex-basis: 50%;
     }
   }
 
@@ -46,7 +50,7 @@
 
   &--left {
     @media (min-width: @desktop-width) {
-      flex-basis: 42%;
+      flex-basis: 37%;
     }
   }
 
@@ -75,8 +79,6 @@
 .site-list__link {
   display: block;
   padding: 30px 0;
-  //outline: 5px solid rgba(0, 128, 256, 0.5);
-  //outline-offset: -5px;
 
   @media (max-width: @mobile-width) {
     text-align: left;
@@ -89,16 +91,9 @@
     }
   }
 
-  &--cart::before {
-    content: "K";
-
-    @media (max-width: @mobile-width) {
-      position: absolute;
-    }
-
-    @media (min-width: @tablet-width) {
-      padding-left: 30px;
-      padding-right: 30px;
+  &--catalog {
+    @media (min-width: @desktop-width) {
+      border-right: 1px solid fade(@basic-black, 10%);
     }
   }
 
@@ -109,22 +104,41 @@
     }
   }
 
-  &--search::before {
-    content: "SEARCH";
-
-    @media (max-width: @mobile-width) {
-      position: absolute;
-    }
-
-    @media (min-width: @tablet-width) {
-      padding-left: 30px;
-      padding-right: 30px;
-    }
-  }
-
   &--center {
     @media (min-width: @tablet-width) {
-      padding-left: 15px;
+      padding-left: 35px;
     }
   }
+}
+
+.site-list__icon {
+  margin: 0 30px;
+  fill: @basic-black;
+  fill-opacity: 0.2;
+
+  @media (max-width: @mobile-width) {
+    position: absolute;
+    left: 0;
+  }
+}
+
+.site-list__link:hover,
+.site-list__link:focus {
+  opacity: 0.6;
+}
+
+.site-list__link:active {
+  opacity: 0.3;
+}
+
+.site-list__link:hover .site-list__icon,
+.site-list__link:focus .site-list__icon {
+  fill-opacity: 1;
+  fill: @special-green-63;
+}
+
+
+.site-list__link:active .site-list__icon {
+  fill-opacity: 0.3;
+  fill: @special-green-63;
 }
