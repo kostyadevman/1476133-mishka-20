@@ -32,17 +32,14 @@
   }
 }
 
-.process__icon-video{
-  @media (min-width: @desktop-width) {
-    margin-bottom: 30px;
-  }
-
-}
-
 .process__icon-video {
   width: 32px;
   height: 32px;
   fill: @special-green-63;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .process__video {
@@ -58,6 +55,7 @@
 
 .process__description {
   grid-area: description;
+
   @media (max-width: @mobile-width) {
     margin: 0;
     padding: 35px 30px 40px 35px;
