@@ -9,7 +9,19 @@
 }
 
 .main-nav__toggle {
-  @media (min-width: @mobile-width) {
+  @media (max-width: @mobile-width) {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    background-color: transparent;
+    border: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  &--open {
     display: none;
   }
 }

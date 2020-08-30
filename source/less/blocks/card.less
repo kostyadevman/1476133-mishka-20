@@ -1,18 +1,30 @@
 .card {
   display: grid;
-  //outline: 5px solid rgba(128, 0, 0, 0.5);
-  //outline-offset: -5px;
 
   @media (max-width: @mobile-width) {
     grid-template-rows: auto 1fr;
   }
 
-  @media (min-width: @tablet-width) and (max-width: @desktop-width - 1px) {
+  @media (min-width: @tablet-width) {
     grid-template-columns: auto 1fr;
+    grid-template-rows: none;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-rows: auto 1fr;
+    grid-template-columns: none;
+  }
+}
+
+.card__img {
+  width: 260px;
+
+  @media (min-width: @tablet-width) {
+    width: 334px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 316px;
   }
 }
 

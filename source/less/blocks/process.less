@@ -1,15 +1,13 @@
 .process {
-  @media (max-width: @desktop-width) {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 90px;
-  }
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 90px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 110px;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-width - 1px) {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-areas:
@@ -22,6 +20,10 @@
 
 .process__title {
   grid-area: title;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 45px 109px 0 80px;
   font-size: 20px;
   line-height: 24px;
 
@@ -30,17 +32,41 @@
   }
 }
 
+.process__icon-video{
+  @media (min-width: @desktop-width) {
+    margin-bottom: 30px;
+  }
+
+}
+
+.process__icon-video {
+  width: 32px;
+  height: 32px;
+  fill: @special-green-63;
+}
+
 .process__video {
   grid-area: video;
-  background-color: @special-grey-c6;
+  position: relative;
+  display: flex;
+  justify-content: center;
 
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     order: -1;
   }
 }
 
 .process__description {
   grid-area: description;
+  @media (max-width: @mobile-width) {
+    margin: 0;
+    padding: 35px 30px 40px 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    padding: 0 35px 50px 80px;
+  }
 }
 
 .process__link {
@@ -56,10 +82,48 @@
   border: 2px solid @special-grey;
 
   @media (max-width: @mobile-width) {
-    margin: 40px 35px 0 35px;
+    margin: 0 35px 0 35px;
   }
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     margin: 40px 40px 0 40px;
   }
+}
+
+.process__img {
+  width: 260px;
+
+  @media (min-width: @tablet-width) {
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 683px;
+  }
+}
+
+.process__play {
+  position: absolute;
+  align-self: center;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.process__play:hover,
+.process__play:focus {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+.process__play:active {
+  transform: scale(0.8);
+  transition: 0.3s;
+  opacity: 0.3;
+}
+
+.process__icon-play {
+  width: 101px;
 }

@@ -22,7 +22,6 @@ a {
 img {
   height: auto;
   width: 100%;
-  object-fit: contain;
 }
 
 .visually-hidden {
@@ -61,6 +60,20 @@ img {
   }
 
   &--max {
+    @media (max-width: @mobile-width) {
+      .mixin(0);
+    }
+
+    @media (min-width: @tablet-width) {
+      .mixin(0);
+    }
+
+    @media (min-width: @desktop-width) {
+      .mixin(50px);
+    }
+  }
+
+  &--header {
     @media (max-width: @mobile-width) {
       .mixin(0);
     }
