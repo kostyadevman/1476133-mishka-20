@@ -29,12 +29,18 @@
 .products__link {
   display: flex;
   justify-content: space-between;
-  padding: 25px 35px 40px 35px;
+  padding: 25px 35px 17px 35px;
+
+  @media (min-width: @tablet-width) {
+    padding: 25px 35px 40px;
+  }
 }
 
 
 .products__text {
   flex-basis: 20%;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .products__icon {
