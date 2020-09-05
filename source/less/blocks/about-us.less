@@ -13,6 +13,17 @@
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto 40px auto;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .about-us__list {
@@ -26,14 +37,28 @@
   line-height: 20px;
 
   @media (min-width: @tablet-width) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: block;
+    column-count: 2;
+    column-gap: 0;
+    font-size: 20px;
+    line-height: 22px;
   }
 }
 
 .about-us__item {
   margin: 0 0 33px 0;
+
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+    width: 295px;
+    margin: 0 0 60px;
+  }
+}
+
+.about-us__item:nth-child(3n) {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .feedback__navigation-wrapper {

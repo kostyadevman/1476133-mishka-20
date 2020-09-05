@@ -1,14 +1,5 @@
 .product-week {
   position: relative;
-  margin-top: 30px;
-
-  @media (min-width: @tablet-width) {
-    margin-top: 45px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-top: 60px;
-  }
 }
 
 .product-week__wrapper {
@@ -24,7 +15,6 @@
       "profile img"
       "price img"
       "cart img";
-    margin-bottom: 140px;
   }
 
   @media (min-width: @desktop-width) {
@@ -43,7 +33,7 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: -90px;
+    bottom: -95px;
     width: 100%;
     height: 25px;
     background-image: url("../img/bg-zigzag-line.svg");
@@ -55,7 +45,7 @@
     }
 
     @media (max-width: @desktop-width) {
-      left: -5px;
+      left: 0;
     }
   }
 }
@@ -78,6 +68,7 @@
 
   @media (min-width: @tablet-width) {
     width: 334px;
+    margin-top: 10px;
   }
 
   @media (min-width: @desktop-width) {
@@ -103,7 +94,7 @@
 
   @media (min-width: @desktop-width) {
     grid-column-start: 2;
-    margin-bottom: 35px;
+    margin: 70px 0 35px 0;
     font-size: 53px;
     line-height: 57px;
   }
@@ -124,14 +115,14 @@
 
   @media (min-width: @tablet-width) {
     width: 140px;
-    padding: 0 35px;
+    padding: 5px 25px 0 35px;
     margin-left: auto;
   }
 
   @media (min-width: @desktop-width) {
     width: 105px;
     margin-left: 0;
-    padding: 10px 0 0 35px;
+    padding: 79px 0 0 35px;
   }
 }
 
@@ -152,7 +143,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 60px;
+    margin-bottom: 35px;
   }
 }
 
@@ -179,11 +170,11 @@
 .product-week__cart-link {
   grid-area: cart;
   display: block;
-  padding: 15px;
+  padding: 13px;
   text-align: center;
   font-weight: bold;
   font-size: 17px;
-  line-height: 24px;
+  line-height: 20px;
   color: @special-grey;
   text-transform: uppercase;
   border: 2px solid @special-grey;

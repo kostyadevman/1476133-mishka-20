@@ -5,11 +5,11 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 0 50px 0;
+    padding: 0 50px 40px 50px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 20px 0 0;
+    padding: 25px 20px 80px 0;
   }
 }
 
@@ -29,6 +29,12 @@
   &:not(:last-child) {
     margin-right: 30px;
   }
+
+  @media (min-width: @tablet-width) {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
 }
 
 .address__header {
@@ -46,17 +52,29 @@
   @media (min-width: @tablet-width) {
     font-size: 17px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 0px 25px 25px 0;
+  }
 }
 
 .address__value {
   line-height: 30px;
+  font-style: normal;
 
   @media (max-width: @mobile-width) {
-    padding-right: 40px;
     font-size: 15px;
   }
 
   @media (min-width: @tablet-width) {
     font-size: 17px;
   }
+}
+
+.address__link {
+  border-bottom: 1px solid @special-green-62;
+}
+
+.address__place {
+  font-style: normal;
 }
