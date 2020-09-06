@@ -3,6 +3,7 @@
 
   @media (max-width: @mobile-width) {
     grid-template-rows: auto 1fr;
+    grid-gap: 0;
   }
 
   @media (min-width: @tablet-width) {
@@ -31,9 +32,13 @@
 .card__wrapper {
   display: grid;
   grid-template-rows: min-content auto min-content;
-  margin: 0;
+  margin: -4px 0 0 0;
   padding: 0 30px;
   border: 1px solid @special-grey-ec;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 4px;
+  }
 
   &:hover,
   &:focus {
@@ -46,15 +51,20 @@
 }
 
 .card__title {
-  margin: 0;
+  margin: 25px 0 5px 0;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .card__stats {
-  margin: 0;
-  //padding-bottom: 20px;
+  margin: 0 0 20px;
+  padding-bottom: 20px;
   border-bottom: 1px solid @special-grey-ec;
   font-size: 13px;
   line-height: 30px;
@@ -69,6 +79,7 @@
 
 .card__price {
   display: block;
+  margin-bottom: 25px;
   font-weight: bold;
   font-size: 15px;
   line-height: 24px;
