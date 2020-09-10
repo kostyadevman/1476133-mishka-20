@@ -145,12 +145,12 @@ exports.server = server;
 
 const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series("styles"));
-  gulp.watch("source/js/*.js", gulp.series("scripts"));
+  gulp.watch("source/js/*.js").on("change", gulp.series("scripts"), sync.reload);
   gulp.watch("source/*.html").on("change", gulp.series("html"), sync.reload);
   gulp.watch("source/img/sprite/*.svg").on("change", gulp.series("sprite", "html"), sync.reload);
   gulp.watch("source/img/*.{png,jpg}").on("change", gulp.series("images", "webp"), sync.reload);
   gulp.watch("source/css/*.css", gulp.series("styles"));
-}
+};
 
 exports.build = gulp.series(
   clean,

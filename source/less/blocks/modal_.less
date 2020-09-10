@@ -1,22 +1,12 @@
 .modal {
   display: none;
   position: fixed;
-  z-index: 9999;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  border: 1px solid @special-grey-c6;
-  box-shadow: 0 5px 10px fade(@special-grew-dark, 25%);
-  background-color: @basic-white;
-
-  @media (max-width: @mobile-width) {
-    width: 100vw;
-    padding: 0 30px;
-  }
-
-  @media (min-width: @tablet-width) {
-    padding: 0 110px;
-  }
+  z-index: 11;
+  height: 100%;
+  background-color: fade(@basic-white, 90);
+  width: 100%;
+  top: 0;
+  left: 0;
 
   &--show {
     @keyframes modal-on {
@@ -32,7 +22,27 @@
     }
 
     display: block;
-    animation: modal-on 0.6s;
+    //animation: modal-on 0.6s;
+  }
+}
+
+.modal__wrapper {
+  position: fixed;
+  z-index: 9999;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid @special-grey-c6;
+  box-shadow: 0 5px 10px fade(@special-grew-dark, 25%);
+  background-color: @basic-white;
+
+  @media (max-width: @mobile-width) {
+    width: 100vw;
+    padding: 0 30px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0 110px;
   }
 }
 

@@ -18,3 +18,10 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
+modalPopup.addEventListener("click", function (evt) {
+  if (modalPopup.classList.contains("modal--show")) {
+      evt.preventDefault();
+      modalPopup.classList.remove("modal--show");
+  }
+});

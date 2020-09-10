@@ -314,27 +314,29 @@
     </footer>
 
     <section class="page-modal modal">
-      <h2 class="modal__title">Добавить <span class="modal__title-wrapper">в корзину</span></h2>
-      <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset class="modal__fieldset">
-          <legend class="modal__legend">Выберете размер:</legend>
-          <ul class="modal__options">
-            <li class="modal__item modal__item--active">
-              <input class="modal__radio visually-hidden" type="radio" name="size" id="small" checked value="s">
-              <label class="modal__label" for="small">S</label>
-            </li>
-            <li class="modal__item">
-              <input class="modal__radio visually-hidden" type="radio" name="size" id="mid" value="m">
-              <label class="modal__label" for="mid">M</label>
-            </li>
-            <li class="modal__item">
-              <input class="modal__radio visually-hidden" type="radio" name="size" id="large" value="l">
-              <label class="modal__label" for="large">L</label>
-            </li>
-          </ul>
-        </fieldset>
-        <button class="modal__submit" type="submit">Добавить</button>
-      </form>
+      <div class="modal__wrapper">
+        <h2 class="modal__title">Добавить <span class="modal__title-wrapper">в корзину</span></h2>
+        <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="modal__fieldset">
+            <legend class="modal__legend">Выберете размер:</legend>
+            <ul class="modal__options">
+              <li class="modal__item modal__item--active">
+                <input class="modal__radio visually-hidden" type="radio" name="size" id="small" checked value="s">
+                <label class="modal__label" for="small">S</label>
+              </li>
+              <li class="modal__item">
+                <input class="modal__radio visually-hidden" type="radio" name="size" id="mid" value="m">
+                <label class="modal__label" for="mid">M</label>
+              </li>
+              <li class="modal__item">
+                <input class="modal__radio visually-hidden" type="radio" name="size" id="large" value="l">
+                <label class="modal__label" for="large">L</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="modal__submit" type="submit">Добавить</button>
+        </form>
+      </div>
     </section>
     <script src="js/script.min.js"></script>
   </body>
