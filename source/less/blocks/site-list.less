@@ -68,6 +68,12 @@
       font-size: 15px;
     }
   }
+
+  &--catalog {
+    @media (min-width: @desktop-width) {
+      border-right: 1px solid fade(@basic-black, 10%);
+    }
+  }
 }
 
 .site-list__search-text {
@@ -88,12 +94,6 @@
   &--cart {
     @media (min-width: @tablet-width) {
       text-align: end;
-    }
-  }
-
-  &--catalog {
-    @media (min-width: @desktop-width) {
-      border-right: 1px solid fade(@basic-black, 10%);
     }
   }
 
