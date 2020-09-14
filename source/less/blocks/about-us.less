@@ -37,9 +37,10 @@
   line-height: 20px;
 
   @media (min-width: @tablet-width) {
-    display: block;
-    column-count: 2;
-    column-gap: 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-flow: column;
+    grid-template-rows: auto auto auto;
     font-size: 20px;
     line-height: 22px;
   }

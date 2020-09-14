@@ -62,6 +62,15 @@
   }
 }
 
+.card__title:focus,
+.card__title:hover {
+  color: rgba(@basic-black, 0.6);
+}
+
+.card__title:active {
+  color: rgba(@basic-black, 0.3);
+}
+
 .card__stats {
   margin: 0 0 20px;
   padding-bottom: 20px;
@@ -83,4 +92,19 @@
   font-weight: bold;
   font-size: 15px;
   line-height: 24px;
+}
+
+.card__icon {
+  fill-opacity: 0.2;
+}
+
+.card__icon:focus,
+.card__icon:hover {
+  fill: @special-green-63;
+  fill-opacity: 1;
+}
+
+.card__icon:active {
+  fill: @special-green-63;
+  fill-opacity: 0.3;
 }

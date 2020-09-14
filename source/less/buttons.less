@@ -1,0 +1,24 @@
+.button {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: @special-grey;
+  text-transform: uppercase;
+  border: 2px solid @special-grey;
+
+  @media (max-width: @mobile-width) {
+    font-size: 18px;
+  }
+}
+
+.button:focus,
+.button:hover {
+  background: linear-gradient(0deg, @special-grey-44, @special-grey-44);
+  color: @basic-white;
+}
+
+.button:active {
+  color: rgba(@basic-white, .6);
+}
